@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi! I'm Nguyen</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>This is Nguyen</h1>
+        <nav>
+            <a href="/index.html">Let's Start Here!</a> |
+            <a href="/projects.html">Projects</a> |
+            <a href="/other-things.html">Other things I do</a> |
+            <a href="/my-journey.html">My Journey</a> |
+            <a href="/contacts.html">Contacts</a> |
+            <a href="/experiment.html">Experiment</a>
+        </nav>
+    </header>
+        
+    <main>
+        <h2>Contacts</h2>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <ol>
+                    <li>
+                      <label for="name_input">Name: </label>
+                      <input type="text" id="name_input" name="name_input">
+                    </li>
+                    <br />
+                    <li>
+                      <label for="mail_input">E-mail: </label>
+                      <input type="email" id="mail_input" name="mail_input">
+                    </li>
+                    <br />
+                    <li>
+                        <label for="contact_reason">Reason for contact: </label>
+                        <select id="contact_reason" name="contact_reason">
+                            <optgroup label="Job Opportunities">
+                              <option>Tech/Business Field</option>
+                              <option>NGOs</option>
+                              <option>Other</option>
+                            </optgroup>
+                            <optgroup label="Projects Collaboration">
+                              <option>Humanitarian projects (education, job-helping, etc. )</option>
+                              <option>Environmental Projects</option>
+                              <option>Other</option>
+                            </optgroup>
+                            <option>Other</option>
+                        </select>
+                    </li>
+                    <br>
+                    <li>
+                      <label for="msg_input">Message: </label>
+                      <textarea id="msg_input" name="msg_input"></textarea>
+                    </li>
+                    <br />
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ol>
+            </fieldset>
+        </form>
+
+        <section>
+            <p>You can find me at:</p>
+            <a href="https://www.linkedin.com/in/nguyen-luong-se">
+                <img src="media/In-Blue-34.png" alt="Linked logo">
+            </a>
+            <a href="https://github.com/nglu">
+                <img src="media/GitHub-Mark-32px.png" alt="GitHub logo">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p> Here's a quote for the day: <b>Be nice to yourself!</b></p>
+    </footer>
+
+</body>
+</html>
