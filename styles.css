@@ -17,8 +17,28 @@
 
 }
 
+/* For page layout */
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
 @media (min-width: 50em) {
 
+}
+
+body {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
 body {
@@ -61,4 +81,5 @@ main {
 footer {
     background-color: var(--color-neutral-light);
     color: var(--color-primary-dark);
+    justify-content: center;
 }
