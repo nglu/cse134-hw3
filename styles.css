@@ -1,5 +1,64 @@
 /* Nothing here yet */
 
-html {
-    background-color: aliceblue;
+:root {
+    --color-primary-heavy: #3C64B1; /* darkblue */
+    --color-primary-light: #A2C4E4; /* blue */
+    --color-primary-dark: #373F41;
+    --color-neutral-heavy: #ECEFF7; /* lightblue*/
+    --color-neutral-light: #FFFFFF; /* white */
+
+    --font-family: 'Merriweather', serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --font-size-regular: 1rem;
+    --font-size-title: 2rem;
+    --font-size-header: 1.3rem;
+
+}
+
+@media (min-width: 50em) {
+
+}
+
+body {
+    background-color: var(--color-neutral-heavy);
+    margin: 5%;
+    font-family: var(--font-family);
+}
+
+nav {
+    background-color:  var(--color-neutral-light);
+    color: var(--color-primary-dark);
+    padding: 2rem;
+    
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.8rem;
+}
+
+nav a:hover {
+    background-color: var(--color-primary-heavy);
+    color: var(--color-neutral-light);
+    padding: 0.8rem;
+}
+
+main {
+    background-color: var(--color-neutral-light);
+    color: var(--color-primary-dark);
+}
+
+footer {
+    background-color: var(--color-neutral-light);
+    color: var(--color-primary-dark);
 }
