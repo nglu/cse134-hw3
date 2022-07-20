@@ -12,28 +12,32 @@
 </head>
 <body>
     <header>
-        <h1>This is Nguyen</h1>
+        <!-- <h1>This is Nguyen</h1> -->
         <div class="themeImage">
             <img src="/media/theme-other.jpg" alt="Theme photos">
             <!-- <cite>Photo by <a href="https://unsplash.com/@marge1988?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stephane MARGERIN</a> on <a href="https://unsplash.com/s/photos/collage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></cite> -->
         </div>
-        <nav>
+        <nav role="navigation">
+            <p class="menu-button">Menu</p>
+            <!-- Drop down menu trial -->
+            <!-- <label for="menu-show" class="menu-button">Menu</label> -->
+            <!-- <input type="checkbox" id="menu-show"> -->
             <ul>
                 <li><a href="/index.html">Let's Start Here!</a></li>
                 <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/other-things.html">Other things I do</a></li>
+                <li><a class="active" href="/other-things.html">Other things I do</a></li>
                 <li><a href="/my-journey.html">My Journey</a></li>
                 <li><a href="/contacts.html">Contacts</a></li>
                 <li><a href="/experiment.html">Experiment</a></li>
-            </ul>   
-        </nav>  
+            </ul> 
+        </nav>
     </header>
         
     <main>
-        <h2>Other things I do</h2>
+        <h1>Other things I do</h1>
 
         <section>
-            <h3>Photography</h3>
+            <h2>Photography</h2>
             <p>I love capturing the beauty of nature and human in that one single moment. A picture speaks a thousand words!</p>
             <figure>
                 <img src="/media/davenport.jpeg"
@@ -49,7 +53,7 @@
             </figure>
         </section>
         <section>
-            <h3>Social Awareness Activities</h3>
+            <h2>Social Awareness Activities</h2>
             <p>One of the things I enjoy spending my time and effort in is doing charity work.</p>
             <!-- <picture>
                 <source srcset="/media/book.jpg"

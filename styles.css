@@ -17,7 +17,7 @@
 
 }
 
-/* For page layout */
+/*-------- Page layout --------*/
 header {
     grid-area: header;
 }
@@ -26,10 +26,6 @@ main {
 }
 footer {
     grid-area: footer;
-}
-
-@media (min-width: 50em) {
-
 }
 
 body {
@@ -41,6 +37,7 @@ body {
         "footer";
 }
 
+/*-------- Theme image --------*/
 .themeImage {
     height: 45vh;
     /* overflow: hidden; */
@@ -52,36 +49,90 @@ body {
     object-fit: cover;
 }
 
-body {
-    background-color: var(--color-neutral-heavy);
-    margin: 5%;
-    font-family: var(--font-family);
-}
-
+/*-------- Nav bar --------*/
 nav {
     background-color:  var(--color-neutral-light);
     color: var(--color-primary-dark);
     padding: 2rem;
-    
 }
 
 nav>ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    /* flex-direction: row; */
+    /* justify-content: center; */
 }
 
-nav a {
-    text-decoration: none;
+nav ul li{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
     color: inherit;
+    text-decoration: none;
     padding: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
-    background-color: var(--color-primary-heavy);
-    color: var(--color-neutral-light);
-    padding: 0.8rem;
+nav ul li a.active,
+nav ul li a:hover {
+  color: var(--color-neutral-light);
+  background: var(--color-primary-heavy);
+}
+
+nav .menu-button {
+    display: none;
+    cursor: pointer;
+}
+
+/* Drop down menu trial */
+/* @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+  }
+
+@media screen and (max-width: 950px) {
+    nav.menu-button {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        display: block;
+        transition: all 0.3s ease;
+        background-color: var(--color-primary-heavy);
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 2rem;
+    }
+
+    nav ul li a {
+        width: 100%;
+        display: block;
+        transition: 0.3s ease;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+    background-color: var(--color-neutral-light);
+    color: var(--color-primary-dark);
+    }
+} */
+
+/*-------- General format --------*/
+body {
+    background-color: var(--color-neutral-heavy);
+    margin: 5%;
+    font-family: var(--font-family);
 }
 
 main {

@@ -37,7 +37,7 @@ main {
         "myReason    myWay      myWay";
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     main {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -56,6 +56,6 @@ main {
     object-position: center;
 }
 
-* {
+/* * {
     border: 1px solid black;
-}
+} */
