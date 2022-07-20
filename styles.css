@@ -76,7 +76,7 @@ nav ul li a{
     text-decoration: none;
     padding: 0.8rem;
     letter-spacing: 1px;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
 }
 
 nav ul li a.active,
