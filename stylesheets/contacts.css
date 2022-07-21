@@ -20,6 +20,15 @@ legend {
     display: none;
 }
 
+button {
+    padding: 10px;
+}
+button:hover {
+    background-color: var(--color-primary-light);
+    border-radius: 5px;
+    box-shadow: none;
+}
+
 /* Contents indise main */
 
 .pageTitle {grid-area: pageTitle;}
