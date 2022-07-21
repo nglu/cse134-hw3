@@ -1,7 +1,7 @@
 :root {
-    --color-primary-heavy: #3C64B1; /* darkblue */
+    --color-primary-heavy: #3C64B1; /* dark blue */
     --color-primary-light: #A2C4E4; /* blue */
-    --color-primary-dark: #373F41;
+    --color-primary-dark: #373F41;  /* dark navy */
     --color-neutral-heavy: #ECEFF7; /* lightblue*/
     --color-neutral-light: #FFFFFF; /* white */
 
@@ -132,6 +132,7 @@ body {
     margin: 5%;
     font-family: var(--font-family);
     text-align: justify;
+    line-height: 1.75;
 }
 
 main {
@@ -151,7 +152,7 @@ h1 {
     color: var(--color-primary-heavy);
 }
 
-h2, b {
+h2, h3, b {
     color: var(--color-primary-heavy);
 }
 

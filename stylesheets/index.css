@@ -1,3 +1,4 @@
+@import "styles.css";
 /* Contents indise main */
 
 .pageTitle {
@@ -8,8 +9,10 @@
 }
 .sidebar {
     grid-area: sidebar;
-    align-self: center;
     text-align: right;
+    align-self: flex-end;
+    background-color: var(--color-primary-light);
+    padding: 1rem 1.5rem;
 }
 .myInterest {
     grid-area: myInterest;
