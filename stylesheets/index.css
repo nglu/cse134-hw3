@@ -1,7 +1,3 @@
-main {
-    grid-area: main;
-}
-
 /* Contents indise main */
 
 .pageTitle {
@@ -10,8 +6,10 @@ main {
 .whoIam {
     grid-area: whoIam;
 }
-.side {
+.sidebar {
     grid-area: sidebar;
+    align-self: center;
+    text-align: right;
 }
 .myInterest {
     grid-area: myInterest;
@@ -52,9 +50,9 @@ main {
     }
 }
 
-.themeImage img {
+/* .themeImage img {
     object-position: center;
-}
+} */
 
 /* * {
     border: 1px solid black;
