@@ -2,7 +2,7 @@
     --color-primary-heavy: #3C64B1; /* dark blue */
     --color-primary-light: #A2C4E4; /* blue */
     --color-primary-dark: #373F41;  /* dark navy */
-    --color-neutral-heavy: #ECEFF7; /* lightblue*/
+    --color-neutral-heavy: #E1E5F0; /* lightblue #ECEFF7*/
     --color-neutral-light: #FFFFFF; /* white */
 
     --font-family: "Merriweather", "Georgia", serif;
@@ -12,6 +12,9 @@
     --font-size-regular: 1rem;
     --font-size-title: 2rem;
     --font-size-header: 1.3rem;
+
+    --border-radius-S: 5px;
+    --border-radius-L: 50px;
 
 }
 
@@ -45,6 +48,8 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-top-right-radius: var(--border-radius-L);
+    border-top-left-radius: var(--border-radius-S);
 }
 
 /*-------- Nav bar --------*/
@@ -52,6 +57,8 @@ nav {
     background-color:  var(--color-neutral-light);
     color: var(--color-primary-dark);
     padding: 2rem;
+    border-bottom-left-radius: var(--border-radius-L);
+    border-bottom-right-radius: var(--border-radius-S);
 }
 
 nav>ul {
@@ -81,6 +88,7 @@ nav ul li a.active,
 nav ul li a:hover {
   color: var(--color-neutral-light);
   background: var(--color-primary-heavy);
+  border-radius: var(--border-radius-S);
 }
 
 nav .menu-button {
@@ -139,12 +147,19 @@ main {
     background-color: var(--color-neutral-light);
     color: var(--color-primary-dark);
     padding: 5% 10%;
+    border-radius: var(--border-radius-S);
+    border-top-right-radius: var(--border-radius-L);
+    border-bottom-left-radius: var(--border-radius-L);
 }
 
 footer {
     background-color: var(--color-neutral-light);
     color: var(--color-primary-dark);
     text-align: center;
+    padding: 1rem;
+    border-radius: var(--border-radius-S);
+    border-top-right-radius: var(--border-radius-L);
+    border-bottom-left-radius: var(--border-radius-L);
 }
 
 h1 {
