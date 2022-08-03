@@ -16,6 +16,8 @@
     --border-radius-S: 5px;
     --border-radius-L: 50px;
 
+    --max-width-media : 1200px;
+
 }
 
 /*-------- Page layout --------*/
@@ -40,7 +42,7 @@ body {
 
 /*-------- Theme image --------*/
 .themeImage {
-    height: 45vh;
+    height: 40vh;
     /* overflow: hidden; */
 }
 

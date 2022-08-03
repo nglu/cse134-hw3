@@ -12,7 +12,9 @@
     text-align: right;
     align-self: flex-end;
     background-color: var(--color-primary-light);
-    border-radius: var(--border-radius-S);
+    border-top-right-radius: var(--border-radius-L);
+    border-bottom-left-radius: var(--border-radius-L);
+    border-bottom-right-radius: var(--border-radius-L);
     padding: 1rem 1.5rem;
 }
 .myInterest {
@@ -39,7 +41,7 @@ main {
         "myReason    myWay      myWay";
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
     main {
         grid-template-columns: 1fr;
         grid-template-areas:
