@@ -173,6 +173,13 @@ h2, h3, b {
     color: var(--color-primary-heavy);
 }
 
+.findMe {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* * {
     border: 1px solid black;

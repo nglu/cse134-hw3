@@ -32,22 +32,15 @@ button:hover {
 /* Contents indise main */
 
 .pageTitle {grid-area: pageTitle;}
-.findMe {grid-area: findMe;}
+/* .findMe {grid-area: findMe;} */
 
 main {
     display: grid;
     gap: 40px;
     grid-template-areas:
         "pageTitle"
-        "formField"
-        "findMe";
-}
-
-.findMe {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+        "formField";
+        /* "findMe"; */
 }
 
 /* * {

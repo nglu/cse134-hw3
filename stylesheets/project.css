@@ -38,9 +38,9 @@ main {
     column-gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "media1     name1"
+        "name1     name1"
         "media1     des1"
-        "sims1      sims1";
+        "media1      sims1";
 }
 
 #section2 {
@@ -48,9 +48,9 @@ main {
     column-gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "media2     name2"
+        "name2     name2"
         "media2     des2"
-        "sims2      sims2";
+        "media2      sims2";
 }
 
 #section3 {
@@ -58,10 +58,32 @@ main {
     column-gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "media3     name3"
+        "name3     name3"
         "media3     des3"
-        "sims3      sims3";
+        "media3      sims3";
 }
+
+/* ----- Making iframe for youtube responsive ----- */
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+.iframe_container {
+    position: relative;
+    padding-top: 56.25%;
+    /* overflow: hidden;
+    width: 100%; */
+}
+.iframe_ytb {
+    position: absolute;
+    top: 0;
+    /* left: 0;
+    bottom: 0;
+    right: 0; */
+    
+    /* left, right don't do much difference */
+    /* only need either top or bottom = 0 */
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------------------------------- */
 
 
 @media screen and (max-width: 950px) {
